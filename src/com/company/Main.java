@@ -11,19 +11,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-//        Client client = new Client();
-//        Scanner input = new Scanner(System.in);
-//
-//        System.out.println("Crie sua conta! Digite seu nome: ");
-//        client.setName(input.nextLine());
-//
-//        //input.nextLine();
-//
-//        CheckingAccount checkingAccount = new CheckingAccount(client);
-//
-//        System.out.println("Digite o valor do seu primeiro deposito: ");
-//        checkingAccount.deposit(input.nextDouble());
-//        SavingsAccount savingsAccount = new SavingsAccount(client);
+        Client client = new Client();
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Crie sua conta! Digite seu nome: ");
+        client.setName(input.nextLine());
+
+        //input.nextLine();
+
+        CheckingAccount checkingAccount = new CheckingAccount(client);
+
+        System.out.println("Digite o valor do seu primeiro deposito: ");
+        checkingAccount.deposit(input.nextDouble());
+        SavingsAccount savingsAccount = new SavingsAccount(client);
+
+        checkingAccount.bankStatment();
 
     }
 }
